@@ -4,6 +4,7 @@ LABEL maintainer="neel@rdkr.uk"
 
 RUN apt-get update && apt-get install -y \
       ca-certificates \
+      iputils \
       dnsutils \
       iproute2 \
       netcat \
