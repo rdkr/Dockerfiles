@@ -1,10 +1,9 @@
-FROM ubuntu:18.04
+FROM ubuntu
 
 LABEL maintainer="neel@rdkr.uk"
 
 RUN apt-get update && apt-get install -y \
       ca-certificates \
-      iputils \
       dnsutils \
       iproute2 \
       netcat \
@@ -13,5 +12,4 @@ RUN apt-get update && apt-get install -y \
       curl \
       wget \
       jq \
-      whois \
-    && rm -rf /var/lib/apt/lists/*
+      whois
